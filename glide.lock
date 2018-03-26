@@ -1,0 +1,10 @@
+hash: 7197819e91ace01998bd93c50971eb3ce34caa8ce79760b32d3db296bb367e8f
+updated: 2018-03-20T16:57:30.631529-07:00
+imports:
+- name: github.com/aws/aws-sdk-go
+  version: 3698d5a02699973b1c9c8731b1c81f83bfcfd72f
+- name: github.com/go-ini/ini
+  version: 6333e38ac20b8949a8dd68baa3650f4dee8f39f0
+- name: github.com/mitchellh/go-homedir
+  version: b8bc1bf767474819792c23f32d8286a45736f1c6
+testImports: []
