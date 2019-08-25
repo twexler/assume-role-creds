@@ -30,7 +30,8 @@ jobs:
         glide install
 
     - name: Build
-      run: |        
+      run: |
+        cd $HOME
         export GOPATH=$HOME/go
         export GOBIN=$(go env GOPATH)/bin
         export PATH=$PATH:$GOBIN
