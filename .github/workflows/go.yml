@@ -30,7 +30,7 @@ jobs:
         glide install
 
     - name: Build
-      run: |
+      run: |        
         echo 'what'
         cd $HOME
         export GOPATH=$HOME/go
