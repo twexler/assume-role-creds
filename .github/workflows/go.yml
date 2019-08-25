@@ -31,13 +31,5 @@ jobs:
 
     - name: Build
       run: |        
-        cd $GITHUB_WORKSPACE
-        export GOPATH=$HOME/go
-        export GOBIN=$(go env GOPATH)/bin
-        export PATH=$PATH:$GOBIN
-        mkdir -p $GOPATH/pkg
-        mkdir -p $GOBIN
-        mkdir -p $GOPATH/src/github.com/$GITHUB_REPOSITORY
-        mv $(pwd)/* $GOPATH/src/github.com/$GITHUB_REPOSITORY
         cd $GOPATH/src/github.com/$GITHUB_REPOSITORY
         go build -v .
