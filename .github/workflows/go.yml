@@ -31,8 +31,7 @@ jobs:
 
     - name: Build
       run: |        
-        echo 'what'
-        cd $HOME
+        cd $GITHUB_WORKSPACE
         export GOPATH=$HOME/go
         export GOBIN=$(go env GOPATH)/bin
         export PATH=$PATH:$GOBIN
