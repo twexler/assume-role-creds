@@ -27,7 +27,7 @@ jobs:
         mv $(pwd)/* $GOPATH/src/github.com/$GITHUB_REPOSITORY
         cd $GOPATH/src/github.com/$GITHUB_REPOSITORY
         go get -v -t github.com/Masterminds/glide
-        glide install
+        glide install 2>&1
 
     - name: Build
       run: |        
